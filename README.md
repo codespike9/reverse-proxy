@@ -1,9 +1,4 @@
-Awesome! Here's your `README.md` tailored for your Go Reverse Proxy project:
-
----
-
-```markdown
-Reverse Proxy in Go
+# Reverse Proxy in Go
 
 A lightweight and customizable reverse proxy server built using Go's standard `net/http` package. This project demonstrates how to route incoming HTTP requests to backend services based on a simple YAML configuration.
 
@@ -31,8 +26,7 @@ Routing behavior is controlled via the `config.yaml` file in the root directory.
 
 ### Example `config.yaml`
 
-yaml
-```
+```yaml
 routes:
   - path_prefix: /api
     backend: http://localhost:3001
@@ -40,8 +34,7 @@ routes:
 ```
 
 This example means:
-
-- Requests starting with `/api/` will be proxied to `http://localhost:3001/` if request is like `localhost:3002/api`
+- Requests to `localhost:3002/api/...` will be proxied to `http://localhost:3001/api/...`
 
 Make sure your backend services are running and accessible at the target addresses.
 
@@ -55,20 +48,17 @@ Make sure your backend services are running and accessible at the target address
 ### Installation
 
 1. **Clone the repository**
-
 ```bash
-git clone https://github.com/codespike9/reverse-proxy.git
+git clone https://github.com/yourusername/reverse-proxy.git
 cd reverse-proxy
 ```
 
 2. **Build the project**
-
 ```bash
 go build -o reverse-proxy.exe main.go
 ```
 
 3. **Run the server**
-
 ```bash
 ./reverse-proxy.exe
 ```
@@ -82,8 +72,3 @@ All request logs are saved to a file named `proxy.log` in the project directory.
 ## 👥 Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a pull request if you have ideas, improvements, or bug fixes.
-
-
----
-
-Let me know if you want to add sections like **"Deploying on EC2"**, **"Docker support"**, or **"TLS/HTTPS"** next — happy to help you expand the project!
