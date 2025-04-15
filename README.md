@@ -3,7 +3,7 @@ Awesome! Here's your `README.md` tailored for your Go Reverse Proxy project:
 ---
 
 ```markdown
-# Reverse Proxy in Go
+Reverse Proxy in Go
 
 A lightweight and customizable reverse proxy server built using Go's standard `net/http` package. This project demonstrates how to route incoming HTTP requests to backend services based on a simple YAML configuration.
 
