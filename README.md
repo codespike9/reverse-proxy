@@ -31,7 +31,8 @@ Routing behavior is controlled via the `config.yaml` file in the root directory.
 
 ### Example `config.yaml`
 
-```yaml
+yaml
+```
 routes:
   - path_prefix: /api
     backend: http://localhost:3001
