@@ -1,0 +1,4 @@
+routes:
+  - path_prefix: /
+    backend: http://localhost:3001
+    server: localhost:3002
